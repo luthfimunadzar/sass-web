@@ -1,0 +1,7 @@
+assets/css/*.css.map
+.idea/
+.sass-cache
+assets/images/*.mp4
+
+node_modules
+bower_components
