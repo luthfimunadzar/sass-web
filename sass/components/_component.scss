@@ -95,6 +95,7 @@
   font-family: $b;
   color: $wt;
   position: fixed;
+  z-index: 9;
   top: 45%;
   right: -64px;
   padding: 5px 15px;
@@ -247,5 +248,32 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+.search-float {
+  position: absolute;
+  right: -350px;
+  top: 91px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  .form-control {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none;
+    width: 350px;
+    background-image: url("../images/search-b.png");
+    background-position: left 15px center;
+    background-repeat: no-repeat;
+    padding-left: 40px !important;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &.show-up {
+    right: 0;
+    @media screen and (max-width: 767px) {
+      left: 0;
+    }
   }
 }

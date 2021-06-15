@@ -1,11 +1,12 @@
 // content
 
-html{
-    min-height: 100vh;
+html {
+  min-height: 100vh;
 }
 
-body{
-    color: $t;
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+body {
+  color: $t;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }

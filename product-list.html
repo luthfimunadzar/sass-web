@@ -44,13 +44,16 @@
 				<img src="assets/images/logo.png" alt="">
 				<img src="assets/images/logo-text.png" alt="" class="d-none d-lg-inline-block">
 			</a>
-			<a href="" class="search">
+			<a href="javascript:void(0);" class="search">
 				<img src="assets/images/search-header.png" alt="">
 			</a>
 			<a href="" class="shop">
 				SHOP
 				<img src="assets/images/shopping-bag.svg" alt="">
 			</a>
+		</div>
+		<div class="search-float">
+			<input type="search" value="" class="form-control" placeholder="Search">
 		</div>
 	</header>
 	
@@ -79,6 +82,19 @@
 			<a href=""><i class="fa fa-instagram"></i></a>
 		</div>
 	</aside>
+
+	<!-- header fixed -->
+	<div class="product-head fixed d-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="product.html" class="back-link">Back to product list</a>
+					<h2>Phillips Product</h2>
+					<a href="product-compare.html" class="btn btn-white">COMPARE PRODUCT</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- hero -->
 	<div class="content dark pb-0">
@@ -287,6 +303,20 @@
 
 		$('.close-btn').on('click', function(){
 			$('.menu-sidebar').removeClass('slideIn')
+		})
+
+		$('.search').on('click', function(){
+			$('.search-float').toggleClass('show-up')
+		})
+
+		var userScroll = $(document).scrollTop();
+		$(window).on('scroll', function() {
+			var newScroll = $(document).scrollTop();
+			if(userScroll - newScroll > 250 || newScroll - userScroll > 250){
+				$(".product-head.fixed").removeClass('d-none');
+			} else {
+				$(".product-head.fixed").addClass('d-none');
+			}
 		})
 	</script>
 

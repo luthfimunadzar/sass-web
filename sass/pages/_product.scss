@@ -85,6 +85,43 @@
       float: none;
     }
   }
+  &.fixed {
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: #304666;
+    z-index: 99;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba($color: $wt, $alpha: 0.1);
+    .back-link {
+      font-size: 14px;
+      margin-bottom: 0;
+      @media screen and (max-width: 767px) {
+        float: left;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 0;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        float: left;
+        clear: left;
+      }
+    }
+    .btn-white {
+      font-size: 14px;
+      margin-top: -10px;
+      @media screen and (max-width: 767px) {
+        margin-top: -18px;
+        float: right;
+        font-size: 13px;
+      }
+    }
+  }
 }
 
 .product-wrap {

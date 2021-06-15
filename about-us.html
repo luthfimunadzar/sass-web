@@ -45,7 +45,7 @@
 				<img src="assets/images/logo.png" alt="">
 				<img src="assets/images/logo-text.png" alt="" class="d-none d-lg-inline-block">
 			</a>
-			<a href="" class="search">
+			<a href="javascript:void(0);" class="search">
 				<img src="assets/images/search-header.png" alt="">
 			</a>
 			<a href="" class="shop">
@@ -249,6 +249,10 @@
 
 		$('.close-btn').on('click', function(){
 			$('.menu-sidebar').removeClass('slideIn')
+		})
+
+		$('.search').on('click', function(){
+			$('.search-float').toggleClass('show-up')
 		})
 
 		$(document).on('click', '.scroll-down', function(event){                        
