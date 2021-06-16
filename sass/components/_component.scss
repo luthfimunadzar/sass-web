@@ -253,10 +253,15 @@
 
 .search-float {
   position: absolute;
-  right: -350px;
+  right: 0px;
   top: 91px;
   background-color: #fff;
   transition: all 0.3s ease;
+  width: 0;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    left: 0;
+  }
   .form-control {
     border-radius: 0 !important;
     border: none !important;
@@ -265,15 +270,16 @@
     background-image: url("../images/search-b.png");
     background-position: left 15px center;
     background-repeat: no-repeat;
-    padding-left: 40px !important;
+    padding: 10px 16px 10px 40px !important;
+    transition: all 0.3s ease;
     @media screen and (max-width: 767px) {
       width: 100%;
     }
   }
   &.show-up {
-    right: 0;
+    width: 350px;
     @media screen and (max-width: 767px) {
-      left: 0;
+      width: 100%;
     }
   }
 }
