@@ -141,9 +141,9 @@
     font-family: $b;
     font-size: 20px;
     color: $main;
-    height: 75px;
+    height: 50px;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     @media screen and (max-width: 767px) {
       font-size: 18px;
       height: 65px;
@@ -152,7 +152,7 @@
   span {
     display: block;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 13px;
     color: $main;
     opacity: 0.4;
     @media screen and (max-width: 767px) {
@@ -253,14 +253,17 @@
 
 .search-float {
   position: absolute;
-  right: 0px;
-  top: 91px;
+  border-radius: 10px;
+  right: 53px;
+  top: 22px;
   background-color: #fff;
   transition: all 0.3s ease;
   width: 0;
   overflow: hidden;
   @media screen and (max-width: 767px) {
     left: 0;
+    top: 92px;
+    border-radius: 0;
   }
   .form-control {
     border-radius: 0 !important;
