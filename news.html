@@ -82,6 +82,9 @@
 		</div>
 	</aside>
 
+	<!-- overlay -->
+	<div class="overlay"></div>
+
 	<!-- hero -->
 	<div class="content">
 		<div class="title-page">
@@ -187,10 +190,12 @@
 	<script>
 		$('.toggle').on('click', function(){
 			$('.menu-sidebar').addClass('slideIn')
+			$('.overlay').addClass('show')
 		})
 
 		$('.close-btn').on('click', function(){
 			$('.menu-sidebar').removeClass('slideIn')
+			$('.overlay').removeClass('show')
 		})
 		
 		$('.search').on('click', function(){

@@ -85,6 +85,9 @@
 		</div>
 	</aside>
 
+	<!-- overlay -->
+	<div class="overlay"></div>
+
 	<!-- header fixed -->
 	<div class="product-head fixed d-none">
 		<div class="container">
@@ -502,12 +505,14 @@
 	</div>
 
 	<script>
-		$('.toggle').on('click', function () {
+		$('.toggle').on('click', function(){
 			$('.menu-sidebar').addClass('slideIn')
+			$('.overlay').addClass('show')
 		})
 
-		$('.close-btn').on('click', function () {
+		$('.close-btn').on('click', function(){
 			$('.menu-sidebar').removeClass('slideIn')
+			$('.overlay').removeClass('show')
 		})
 
 		$('.search').on('click', function () {
