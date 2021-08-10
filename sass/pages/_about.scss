@@ -182,7 +182,7 @@
       }
     }
     .map-address {
-      padding: 45px 30px;
+      padding: 35px 30px;
       border-radius: 10px;
       width: 430px;
       background-color: $wt;
@@ -235,8 +235,14 @@
           margin-bottom: 30px;
         }
       }
+      a.email{
+        font-size: 17px;
+        word-break: break-all;
+        margin-bottom: 0;
+      }
       .half-wrap {
         display: inline-block;
+        vertical-align: top;
         width: 49%;
         @media screen and (max-width: 991px) {
           width: 100%;
