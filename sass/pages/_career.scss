@@ -222,8 +222,7 @@
     ul {
       margin: 0 0 35px 0;
       padding: 0;
-      max-height: 320px;
-      overflow: hidden scroll;
+      height: auto;
       li {
         list-style: none;
         position: relative;
